@@ -4,7 +4,7 @@
 #
 Name     : django_openstack_auth
 Version  : 2.0.1
-Release  : 17
+Release  : 18
 URL      : http://tarballs.openstack.org/django_openstack_auth/django_openstack_auth-2.0.1.tar.gz
 Source0  : http://tarballs.openstack.org/django_openstack_auth/django_openstack_auth-2.0.1.tar.gz
 Summary  : Django authentication backend for use with OpenStack Identity
