@@ -1,10 +1,37 @@
 CHANGES
 =======
 
+2.2.0
+-----
+
+* Updated from global requirements
+* Update URLs to Django 1.8+ style
+* Add app_label
+* Change log.error to log.warning
+* Fix "Add API version to identity endpoint URLs"
+* Add convenient method to get admin roles and permissions
+* Update translation setup
+* Drop supporting python3.3
+* Remove openstack-common.conf
+* Updated from global requirements
+* Updated from global requirements
+* Fix the py27dj19 tests
+* Add py27dj19 tox env
+* Updated from global requirements
+* Fix WebSSO when Keystone server hostname contains 'auth'
+* Update url_for parameter for domain policy check
+* Unscoped PKI token should no longer be hashed multiple times
+* Python 3 deprecated the logger.warn method in favor of warning
+* Use consistent region during login
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+
 2.1.1
 -----
 
 * Fixing backward compatibility
+* Add API version to identity endpoint URLs
+* Deprecated tox -downloadcache option removed
 * Add domain initial value on login
 * Move d-o-a auth library to keystoneauth
 
