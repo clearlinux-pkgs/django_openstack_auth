@@ -1,12 +1,24 @@
 CHANGES
 =======
 
-2.2.1
+2.3.0
 -----
 
+* Clarify the confusing warning in case of Keystone v2.0 vs v3 conflict
+* Fix Keystone url version suffix when webpath is present
+* Use login endpoint as key for AVAILABLE_REGIONS
+* Updated from global requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+* Updated from global requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+* When calculating session_time, use the actual token life
 * Imported Translations from Zanata
 * Imported Translations from Zanata
-* Update .gitreview for stable/mitaka
+* Imported Translations from Zanata
+* Fix token hashing with python 3
+* Don't call the Keystone client if the token is None
 
 2.2.0
 -----
@@ -364,7 +376,7 @@ CHANGES
 * Allow insecure authentication Pass through the value of OPENSTACK_SSL_NO_VERIFY from settings.py to keystoneclient. This allows connecting to servers with self-signed or otherwise invalid certificates for testing purposes. It extends commit 8759ad4804271d0f86eed514a8007157f44d4ba4
 * Updated User object for Django 1.5 compatibility
 * Fix compatibility with Django < 1.4.3
-* Allowing for more complex combinations of permissions. Will check for logical AND of all top level permissions. Will use logical OR for all first level tuples (check that use has one permissions in the tuple)
+* Allowing for more complex combinations of permissions.  Will check for logical AND of all top level permissions.  Will use logical OR for all first level tuples (check that use has one permissions in the tuple)
 * Bump version for new release
 * Support custom redirect url from the 'switch' view
 * Turn log level down for failure on delete token
