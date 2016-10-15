@@ -1,6 +1,40 @@
 CHANGES
 =======
 
+2.4.1
+-----
+
+* Revert "Add is_authenticated and is_anonymous properties"
+* Imported Translations from Zanata
+* Add is_authenticated and is_anonymous properties
+* Fix wrong warning about keystone version
+* Update .gitreview for stable/newton
+* Updated from global requirements
+* Imported Translations from Zanata
+* Correctly initialize TestResponses
+
+2.4.0
+-----
+
+* Fix django 1.10 tox env
+* Updated from global requirements
+* Updated from global requirements
+* Fix Django 1.10 tox env
+* [Django 1.10] Define TEMPLATES
+* Add 'is_admin_project' attribute in token
+* Not authorized when logout and creating instance
+* Updated from global requirements
+* Adding tenant_id to policy default
+* Add Django 1.10 tox env
+* Updated from global requirements
+* Updated from global requirements
+* Make fix_auth_url_version() delegate emitting the warning up the stack
+* Updated from global requirements
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Updated from global requirements
+* Updated from global requirements
+
 2.3.0
 -----
 
