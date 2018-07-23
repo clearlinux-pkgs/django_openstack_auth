@@ -1,17 +1,127 @@
 CHANGES
 =======
 
-2.4.1
+3.6.1
 -----
 
-* Revert "Add is_authenticated and is_anonymous properties"
+* Allow an action if no policy exists for it and there is no default policy
+* Remove tox\_install.sh usage
+
+3.6.0
+-----
+
 * Imported Translations from Zanata
-* Add is_authenticated and is_anonymous properties
-* Fix wrong warning about keystone version
-* Update .gitreview for stable/newton
+* Zuul: Remove project name
+* Don't add required attribute to html form fields
+* Imported Translations from Zanata
+* Add .zuul.yaml for pike
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Updated from global requirements
+* Update UPPER\_CONSTRAINTS\_FILE for stable/pike
+* Update .gitreview for stable/pike
+
+3.5.0
+-----
+
+* Manually bump Django requirement
+
+3.4.0
+-----
+
+* Fix Django 1.11 Compatibility
+* Imported Translations from Zanata
+* Fix default mutable arg in k2k.py
+* Allow for manual setting of default service region in config
+* hacking: Drop import\_exceptions from tox.ini
+
+3.3.0
+-----
+
+* Bump Django requirements cap
+* Migrate settings on a feature merged recently
+* Add Django 1.11 tox env
+* Add support for a domain dropdown menu at login
+* doc: Add configuration reference
+* doc: cleanup doc build configuration
+* Imported Translations from Zanata
+* Updated from global requirements
+* switch from oslosphinx to openstackdocstheme
+* move documentation into the new standard layout
+* Imported Translations from Zanata
+* Updated from global requirements
+* Fix doc build
+
+3.2.0
+-----
+
+* Imported Translations from Zanata
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
 * Updated from global requirements
 * Imported Translations from Zanata
+* Imported Translations from Zanata
+* Updated from global requirements
+* Cleanup doc warnings and enforce warning-is-error in sphinx
+* Imported Translations from Zanata
+* Updated from global requirements
+* The python 3.5 added
+* Updated from global requirements
+* Update hacking version to fix tests
+* Implement expiration date alert message
+* Updated from global requirements
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+
+3.1.1
+-----
+
+* Store the project domain ID in the Token object
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Add info logs to plugin scoping
+* Imported Translations from Zanata
+* Updated from global requirements
+* Allow federated users to auth with domain scope
+* Fix exception catch-all in domain scope auth
+
+3.1.0
+-----
+
+* Add K2K Auth Dropdown
+* Updated from global requirements
+* Refactor project and domain scoping
+* Get remote address from client, behind proxy servers, to log on console
+* Add Constraints support
+* Updated from global requirements
+* python3.0 has disable LOG.warn
+* Updated from global requirements
+* Show team and repo badges on README
+* Fix policy check short circuit
+* Updated from global requirements
+
+3.0.0
+-----
+
+* Removing token revoke / delete calls
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+* Modify use of assertTrue(A in B)
+* Imported Translations from Zanata
+* Add is\_authenticated and is\_anonymous properties
+* Imported Translations from Zanata
 * Correctly initialize TestResponses
+* Fix wrong warning about keystone version
+* Imported Translations from Zanata
+* Updated from global requirements
+* Add reason attribute to TestResponse
 
 2.4.0
 -----
@@ -21,14 +131,14 @@ CHANGES
 * Updated from global requirements
 * Fix Django 1.10 tox env
 * [Django 1.10] Define TEMPLATES
-* Add 'is_admin_project' attribute in token
+* Add 'is\_admin\_project' attribute in token
 * Not authorized when logout and creating instance
 * Updated from global requirements
-* Adding tenant_id to policy default
+* Adding tenant\_id to policy default
 * Add Django 1.10 tox env
 * Updated from global requirements
 * Updated from global requirements
-* Make fix_auth_url_version() delegate emitting the warning up the stack
+* Make fix\_auth\_url\_version() delegate emitting the warning up the stack
 * Updated from global requirements
 * Imported Translations from Zanata
 * Imported Translations from Zanata
@@ -40,14 +150,14 @@ CHANGES
 
 * Clarify the confusing warning in case of Keystone v2.0 vs v3 conflict
 * Fix Keystone url version suffix when webpath is present
-* Use login endpoint as key for AVAILABLE_REGIONS
+* Use login endpoint as key for AVAILABLE\_REGIONS
 * Updated from global requirements
 * Imported Translations from Zanata
 * Updated from global requirements
 * Updated from global requirements
 * Imported Translations from Zanata
 * Updated from global requirements
-* When calculating session_time, use the actual token life
+* When calculating session\_time, use the actual token life
 * Imported Translations from Zanata
 * Imported Translations from Zanata
 * Imported Translations from Zanata
@@ -59,7 +169,7 @@ CHANGES
 
 * Updated from global requirements
 * Update URLs to Django 1.8+ style
-* Add app_label
+* Add app\_label
 * Change log.error to log.warning
 * Fix "Add API version to identity endpoint URLs"
 * Add convenient method to get admin roles and permissions
@@ -72,7 +182,7 @@ CHANGES
 * Add py27dj19 tox env
 * Updated from global requirements
 * Fix WebSSO when Keystone server hostname contains 'auth'
-* Update url_for parameter for domain policy check
+* Update url\_for parameter for domain policy check
 * Unscoped PKI token should no longer be hashed multiple times
 * Python 3 deprecated the logger.warn method in favor of warning
 * Use consistent region during login
@@ -162,12 +272,12 @@ CHANGES
 * Imported Translations from Transifex
 * Updated from global requirements
 * Imported Translations from Transifex
-* Support removal of last_activity session flag
+* Support removal of last\_activity session flag
 * Use graduated version of oslo.policy
 * Imported Translations from Transifex
 * Imported Translations from Transifex
 * Imported Translations from Transifex
-* Add missing _ import to plugin/base.py
+* Add missing \_ import to plugin/base.py
 * Imported Translations from Transifex
 
 1.3.1
@@ -217,10 +327,10 @@ CHANGES
 * Imported Translations from Transifex
 * Imported Translations from Transifex
 * Add token auth plugin
-* Make list_projects a method of auth plugin
+* Make list\_projects a method of auth plugin
 * Imported Translations from Transifex
 * Imported Translations from Transifex
-* Rename AUTH_PLUGINS option
+* Rename AUTH\_PLUGINS option
 * Follow ups to Authentication Plugins
 * Expose keystone client version as a plugin property
 * Create plugin model for DOA authentication
@@ -246,15 +356,15 @@ CHANGES
 -----
 
 * Imported Translations from Transifex
-* Add defaulting of services_region in User class
-* Relocating policy engine from openstack_dashboard
+* Add defaulting of services\_region in User class
+* Relocating policy engine from openstack\_dashboard
 * Use keystone auth plugins
 * Imported Translations from Transifex
 * Imported Translations from Transifex
 * Allow an empty region list
 * Attempt to scope only to enabled projects
-* Add call to KS V3 revoke_token on logout
-* add last_activity to session
+* Add call to KS V3 revoke\_token on logout
+* add last\_activity to session
 * Workflow documentation is now in infra-manual
 * Use standard test loading features
 
@@ -267,7 +377,7 @@ CHANGES
 * Imported Translations from Transifex
 * Make region and project sticky
 * Updated the installation instructions
-* Remove admin role name 'admin' hardcode in User.is_superuser()
+* Remove admin role name 'admin' hardcode in User.is\_superuser()
 * Imported Translations from Transifex
 * Fix inability to switch region via Switch Region dropdown
 * Updated from global requirements
@@ -280,14 +390,14 @@ CHANGES
 
 * Updated from global requirements
 * Updated from global requirements
-* Set DJANGO_SETTINGS_MODULE envvar in doc/source/conf.py
+* Set DJANGO\_SETTINGS\_MODULE envvar in doc/source/conf.py
 * Adding django kwargs to login and logout views
 * Fix Django 1.7 compat
 * Work toward Python 3.4 support and testing
-* Consider old version of token without 'user_domain_name' attr
-* Added url_path_replace and has_in_url_path methods
+* Consider old version of token without 'user\_domain\_name' attr
+* Added url\_path\_replace and has\_in\_url\_path methods
 * Configurable token hashing algorithm
-* Add user_domain_name in the user object
+* Add user\_domain\_name in the user object
 * Updated from global requirements
 * Updated from global requirements
 * Updated from global requirements
@@ -310,7 +420,7 @@ CHANGES
 * Add license header to exceptions.py
 * Fix H301 and H304 hacking issues
 * Updated from global requirements
-* Set default auth_url from django settings when auth_url is None
+* Set default auth\_url from django settings when auth\_url is None
 * Disable H803 check
 * Add the Python 3 classifiers
 * Do not use Exception.message
@@ -325,7 +435,7 @@ CHANGES
 * Updated from global requirements
 * Add tox env to build docs
 * Fix H306 imports not in alphabetical order
-* Fix remaining PEP8 (E***) and PyFlakes (F***) issues
+* Fix remaining PEP8 (E\*\*\*) and PyFlakes (F\*\*\*) issues
 * Make Hacking E1XX compliant
 
 1.1.5
@@ -355,7 +465,7 @@ CHANGES
 * Fixed urls import
 * Fix django.conf.urls.defaults imports
 * Refresh request.user on session updates
-* Pass OPENSTACK_SSL_CACERT setting to keystone
+* Pass OPENSTACK\_SSL\_CACERT setting to keystone
 * Giving focus on username field on log in page
 
 1.1.3
@@ -365,8 +475,8 @@ CHANGES
 * Import translations from Transifex for Havana RC1
 * Add I18N related configurations
 * Revoking token when switching tenant or loging out
-* Add Apache2 licence header in data_v3.py
-* Make auth backend use OPENSTACK_ENDPOINT_TYPE parameter from settings
+* Add Apache2 licence header in data\_v3.py
+* Make auth backend use OPENSTACK\_ENDPOINT\_TYPE parameter from settings
 * Missing check, supporting changes in horizon for middleware changes
 * Update message translation files
 * Align with OpenStack project standards
@@ -404,10 +514,10 @@ CHANGES
 * Add logging on logout and token rescoping
 * Add logging for success/failed login
 * Bump version for release to PyPI
-* setting of SECRET_KEY is required for Django-1.5
+* setting of SECRET\_KEY is required for Django-1.5
 * Bump version for new release to PyPI
 * Fix unit tests after adding insecure flag
-* Allow insecure authentication Pass through the value of OPENSTACK_SSL_NO_VERIFY from settings.py to keystoneclient. This allows connecting to servers with self-signed or otherwise invalid certificates for testing purposes. It extends commit 8759ad4804271d0f86eed514a8007157f44d4ba4
+* Allow insecure authentication Pass through the value of OPENSTACK\_SSL\_NO\_VERIFY from settings.py to keystoneclient. This allows connecting to servers with self-signed or otherwise invalid certificates for testing purposes. It extends commit 8759ad4804271d0f86eed514a8007157f44d4ba4
 * Updated User object for Django 1.5 compatibility
 * Fix compatibility with Django < 1.4.3
 * Allowing for more complex combinations of permissions.  Will check for logical AND of all top level permissions.  Will use logical OR for all first level tuples (check that use has one permissions in the tuple)
@@ -415,9 +525,9 @@ CHANGES
 * Support custom redirect url from the 'switch' view
 * Turn log level down for failure on delete token
 * Fixing tests that broke in transition to python-keystoneclient v0.2
-* Update openstack_auth/views.py
+* Update openstack\_auth/views.py
 * missed obvious bug when moving to new thread
-* Fixed l10n bugs and added zh_CN translation
+* Fixed l10n bugs and added zh\_CN translation
 * Added german translation
 * horizon bug 1079832 Logout does not revoke the tokens created, correcting to keep tuple of endpoints and clients
 * Allow insecure authentication
